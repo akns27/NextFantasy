@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { wantedSansVariables } from "./style/global.css";
 
 export const metadata: Metadata = {
   title: "NextFantasy",
