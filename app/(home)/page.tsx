@@ -7,6 +7,7 @@ export default function Home() {
       <div className={testStyle}>
         <p className = {label1}>안녕하세요 이것은 테스트입니다</p>
         <p className = {label1}>안녕하세요 이것은 테스트2입니다</p>
+        <p className = {label1}>안녕하세요 사이즈 키웠다고요</p>
       </div>
       <div style={{ width: "20px", height: "20px", color: vars.colors.gray[400] }}>테스트</div>
 
