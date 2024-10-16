@@ -6,6 +6,7 @@ export const HomeInfoCard = style({
   flexDirection: "column",
   alignItems: "flex-start",
   gap: "20px",
+  paddingBottom: "28px",
 });
 
 export const HomeInfoCardImage = style({

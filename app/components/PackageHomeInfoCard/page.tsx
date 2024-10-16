@@ -3,15 +3,37 @@ import * as globalStyles from "../../style/global.css";
 import * as styles from "./PackageHomeInfoCard.css";
 import image1 from "../.././public/images/love119.png";
 import Image from "next/image";
-import star from "../.././public/images/star.svg"
+import star from "../.././public/images/star.svg";
+import { vars } from "../../style/global.css";
+import starIcon from "../../public/images/star.svg";
 
-const PackageHomeInfoCard = () => {
+interface PackageInfo {
+  image: string;
+  name: string;
+  rating: number;
+  startDate: string;
+  endDate: string;
+  price: number;
+}
+
+const formatDate = (dateString: string):string => {
+  const date = new Date(dateString);
+  const month = date.getMonth() + 1; // getMonth()는 0부터 시작하므로 1을 더한다.
+  const day = date.getDate();
+  return `${month.toString().padStart(2, "0")}월 ${day
+    .toString()
+    .padStart(2, "0")}일`;
+};
+
+const PackageHomeInfoCard = ({ packageInfo }: { packageInfo: PackageInfo }): JSX.Element => {
+  const { image, name, rating, startDate, endDate, price } = packageInfo;
+
   return (
     <div className={styles.HomeInfoCard}>
       <div className={styles.CardImageContainer}>
         <Image
           className={styles.HomeInfoCardImage}
-          src={image1}
+          src={image}
           layout="fill"
           objectFit="cover"
           alt="패키지 썸네일"
@@ -19,17 +41,18 @@ const PackageHomeInfoCard = () => {
       </div>
       <div className={styles.InstructionTexts}>
         <div className={styles.UpperInstruction}>
-          <div className={globalStyles.h5}>
-            올 겨울, 마음을 따뜻하게 만들 삿포로
-          </div>
+          <h5 className={globalStyles.h5}>{name}</h5>
           <div className={styles.Rating}>
-            <Image src={star} alt="별점"/>
-            <div className={globalStyles.p5}>4.5</div>
+            <Image src={starIcon} width={14} height={14} alt="별점" />
+            <p className={globalStyles.p5}>{rating.toFixed(1)}</p>
           </div>
         </div>
-
-        <div className={globalStyles.p5} style={{color: globalStyles.vars.colors.gray[700]}}>10월 8일 ~ 10월 11일</div>
-        <div className={globalStyles.label1} style={{color: globalStyles.vars.colors.gray[700]}} >250,000원 부터</div>
+        <p className={globalStyles.p5} style={{ color: vars.colors.gray[700] }}>
+          {formatDate(startDate)} ~ {formatDate(endDate)}
+        </p>
+        <p className={globalStyles.label1} style={{ color: vars.colors.gray[700] }}>
+          {price.toLocaleString()}원 부터
+        </p>
       </div>
     </div>
   );
