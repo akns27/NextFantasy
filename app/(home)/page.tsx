@@ -1,16 +1,16 @@
-import { testStyle } from "../style/layout.css";
-import { label1, vars } from "../style/global.css";
+import CategoryBar from "../components/CategoryBar/CategoryBar";
+import PackageHomeInfoCard from "../components/PackageHomeInfoCard/page";
+import SearchBar from "../components/SearchBar/page";
+import * as globalStyles from "../style/global.css";
+import * as styles from "../components/PackageHomeInfoCard/PackageHomeInfoCard.css";
 
 export default function Home() {
   return (
-    <div>
-      <div className={testStyle}>
-        <p className = {label1}>안녕하세요 이것은 테스트입니다</p>
-        <p className = {label1}>안녕하세요 이것은 테스트2입니다</p>
-        <p className = {label1}>안녕하세요 사이즈 키웠다고요</p>
-      </div>
-      <div style={{ width: "20px", height: "20px", color: vars.colors.gray[400] }}>테스트</div>
-
+    <div className={globalStyles.MobileContainer}>
+      <SearchBar/>
+      <CategoryBar/>
+      <PackageHomeInfoCard/>
+      
     </div>
   );
 }

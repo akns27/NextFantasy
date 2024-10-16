@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import './style/reset.css'
+import * as globalStyles from "./style/global.css";
 
 export const metadata: Metadata = {
   title: "NextFantasy",
@@ -11,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={globalStyles.WholeContainer}>
       <body>{children}</body>
     </html>
   );

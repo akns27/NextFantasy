@@ -1,5 +1,24 @@
 import { createGlobalTheme, style } from '@vanilla-extract/css';
 
+export const WholeContainer = style({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  backgroundColor:"#C0D2B4"
+
+});
+
+export const MobileContainer = style({
+  width: "375px",
+  height: "812px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor:"#FFFFFF",
+})
+
 export const vars = createGlobalTheme(':root', {
   
   colors: {
@@ -52,3 +71,4 @@ export const p5 = style({
   lineHeight: '140%',
   letterSpacing: '-0.14px',
 })
+
