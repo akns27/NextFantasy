@@ -13,8 +13,7 @@ import {
 } from "@/app/components/CategoryBar/CategoryBar.css";
 
 import * as GlobalStyle from "../../style/global.css"
-// import { useState } from "react";
-// import { useCategorySelection } from './useCategorySelection';
+
 
 interface CategoryBarProps {
   selectedCategory: string | null;
@@ -22,7 +21,7 @@ interface CategoryBarProps {
 }
 
 const CategoryBar = ({ selectedCategory, setSelectedCategory }: CategoryBarProps): JSX.Element => {
-  // const {selectedCategory, setSelectedCategory} = useCategorySelection();
+
 
   const categories = [
     { icon: DomesticIcon, alt: "국내 여행", text: "국내" },

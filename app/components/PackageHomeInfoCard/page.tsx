@@ -1,6 +1,6 @@
 //PackageHomeInfoCard
 import * as globalStyles from "../../style/global.css";
-import * as styles from "./PackageHomeInfoCard.css";
+import * as S from "./PackageHomeInfoCard.css";
 import image1 from "../.././public/images/love119.png";
 import Image from "next/image";
 import star from "../.././public/images/star.svg";
@@ -36,20 +36,20 @@ const PackageHomeInfoCard = ({
 
   return (
     <Link href={`/package/${id}`}>
-      <div className={styles.HomeInfoCard}>
-        <div className={styles.CardImageContainer}>
+      <div className={S.HomeInfoCard}>
+        <div className={S.CardImageContainer}>
           <Image
-            className={styles.HomeInfoCardImage}
+            className={S.HomeInfoCardImage}
             src={image}
             layout="fill"
             objectFit="cover"
             alt="패키지 썸네일"
           />
         </div>
-        <div className={styles.InstructionTexts}>
-          <div className={styles.UpperInstruction}>
+        <div className={S.InstructionTexts}>
+          <div className={S.UpperInstruction}>
             <h5 className={globalStyles.h5}>{name}</h5>
-            <div className={styles.Rating}>
+            <div className={S.Rating}>
               <Image src={starIcon} width={14} height={14} alt="별점" />
               <p className={globalStyles.p5}>{rating.toFixed(1)}</p>
             </div>

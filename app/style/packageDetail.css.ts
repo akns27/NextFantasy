@@ -28,3 +28,11 @@ export const Wrap = style({
   width: "100%",
   position: "relative",
 });
+
+
+export const BackPage = style({
+  position: "absolute",
+  top: "80%",
+  left: "50%",
+  transform: "translate(-50%, -50% )",
+})

@@ -4,6 +4,7 @@ import * as GlobalStyles from "../../style/global.css";
 import * as CategoryStyles from "./CategoryBar.css";
 import Image from "next/image";
 
+//타입 지정
 interface CategoryItemProps {
   icon: string;
   alt: string;
