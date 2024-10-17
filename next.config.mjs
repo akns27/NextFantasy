@@ -8,6 +8,13 @@ const nextConfig = {
   images: {
     domains: ['github.com', 'via.placeholder.com'],
   },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(woff|woff2|eot|ttf|otf)$/i,
+      type: 'asset/resource',
+    })
+    return config
+  },
 };
 
 export default withVanillaExtract(nextConfig);

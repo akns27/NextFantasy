@@ -1,9 +1,11 @@
 import { createGlobalTheme, style } from "@vanilla-extract/css";
+import { globalFontFace, globalStyle } from "@vanilla-extract/css";
 
 export const WholeContainer = style({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  flexDirection: "column",
   height: "100vh",
   backgroundColor: "#C0D2B4",
   // position: "fixed",
@@ -16,7 +18,7 @@ export const MobileContainer = style({
   height: "812px",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
+  // justifyContent: "center",
   alignItems: "center",
   backgroundColor: "#FFFFFF",
 });
@@ -31,7 +33,7 @@ export const fixedHeader = style({
   flexDirection: "column",
   alignItems: "center",
   gap: "12px",
-  marginTop: "50px",
+  marginTop: "6px",
 });
 
 export const scrollableContent = style({
@@ -91,4 +93,14 @@ export const p5 = style({
   fontWeight: 400,
   lineHeight: "140%",
   letterSpacing: "-0.14px",
+});
+
+globalFontFace("210 Junbotdae", {
+  src: 'url("/fonts/210JunbotdaeR.ttf") format("truetype")',
+  fontWeight: "normal",
+  fontStyle: "normal",
+});
+
+globalStyle("body", {
+  fontFamily: "'210 Junbotdae', sans-serif",
 });

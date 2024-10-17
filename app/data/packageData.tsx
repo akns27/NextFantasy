@@ -3,8 +3,8 @@ export const packageData = [
   {
     id: 1,
     category: "국내",
-    image: "https://via.placeholder.com/327x327.png?text=Jeju",
-    name: "제주도 올레길 트레킹",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8C%E1%85%A6%E1%84%8C%E1%85%AE%E1%84%83%E1%85%A9.jpg?raw=true",
+    name: "제주도에서 나고 자란 사람의 진짜 제주도 투어",
     rating: 4.7,
     startDate: "2024-05-15",
     endDate: "2024-05-19",
@@ -13,18 +13,18 @@ export const packageData = [
   {
     id: 2,
     category: "국내",
-    image: "https://via.placeholder.com/327x327.png?text=Busan",
-    name: "부산 해운대 문화 투어",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%92%E1%85%A2%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%83%E1%85%A2.jpg?raw=true",
+    name: "해운대 당일치기로 뽕뽑기",
     rating: 4.5,
     startDate: "2024-07-10",
-    endDate: "2024-07-13",
-    price: 350000
+    endDate: "2024-07-11",
+    price: 150000
   },
   {
     id: 3,
     category: "국내",
-    image: "https://via.placeholder.com/327x327.png?text=Gyeongju",
-    name: "경주 역사 탐방",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%80%E1%85%A7%E1%86%BC%E1%84%8C%E1%85%AE.jpeg?raw=true",
+    name: "천문대 말고 다른거 보는 경주 탐방",
     rating: 4.6,
     startDate: "2024-09-20",
     endDate: "2024-09-23",
@@ -45,8 +45,8 @@ export const packageData = [
   {
     id: 5,
     category: "해외",
-    image: "https://via.placeholder.com/327x327.png?text=Paris",
-    name: "파리 로맨틱 여행",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%91%E1%85%A1%E1%84%85%E1%85%B5.jpg?raw=true",
+    name: "파리 유학생이 소개 시켜주는 신선한 파리",
     rating: 4.9,
     startDate: "2024-06-01",
     endDate: "2024-06-08",
@@ -55,7 +55,7 @@ export const packageData = [
   {
     id: 6,
     category: "해외",
-    image: "https://via.placeholder.com/327x327.png?text=NewYork",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%82%E1%85%B2%E1%84%8B%E1%85%AD%E1%86%A8.jpg?raw=true",
     name: "뉴욕 시티 투어",
     rating: 4.7,
     startDate: "2024-08-15",
@@ -87,8 +87,8 @@ export const packageData = [
   {
     id: 9,
     category: "혼여행",
-    image: "https://via.placeholder.com/327x327.png?text=Bali",
-    name: "발리 힐링 리트릿",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%87%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5.jpg?raw=true",
+    name: "힐링을 위한 발리",
     rating: 4.5,
     startDate: "2024-05-20",
     endDate: "2024-05-26",
@@ -97,7 +97,7 @@ export const packageData = [
   {
     id: 10,
     category: "혼여행",
-    image: "https://via.placeholder.com/327x327.png?text=Kyoto",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%80%E1%85%AD%E1%84%90%E1%85%A9.jpg?raw=true",
     name: "교토 고즈넉한 여행",
     rating: 4.6,
     startDate: "2024-07-05",
@@ -129,7 +129,7 @@ export const packageData = [
   {
     id: 13,
     category: "함께 여행",
-    image: "https://via.placeholder.com/327x327.png?text=Maldives",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%86%E1%85%A9%E1%86%AF%E1%84%83%E1%85%B5%E1%84%87%E1%85%B3.jpg?raw=true",
     name: "몰디브 로맨틱 허니문",
     rating: 4.9,
     startDate: "2024-06-15",
@@ -139,8 +139,8 @@ export const packageData = [
   {
     id: 14,
     category: "함께 여행",
-    image: "https://via.placeholder.com/327x327.png?text=Switzerland",
-    name: "스위스 알프스 트레킹",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%89%E1%85%B3%E1%84%8B%E1%85%B1%E1%84%89%E1%85%B3.jpg?raw=true",
+    name: "낭만 스키 in 스위스",
     rating: 4.8,
     startDate: "2024-08-01",
     endDate: "2024-08-08",
@@ -171,7 +171,7 @@ export const packageData = [
   {
     id: 17,
     category: "맛집 탐방",
-    image: "https://via.placeholder.com/327x327.png?text=Osaka",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%8B%E1%85%A9%E1%84%89%E1%85%A1%E1%84%8F%E1%85%A1.jpg?raw=true",
     name: "오사카 먹방 여행",
     rating: 4.8,
     startDate: "2024-06-10",
@@ -181,7 +181,7 @@ export const packageData = [
   {
     id: 18,
     category: "맛집 탐방",
-    image: "https://via.placeholder.com/327x327.png?text=Hanoi",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%92%E1%85%A1%E1%84%82%E1%85%A9%E1%84%8B%E1%85%B5.jpg?raw=true",
     name: "하노이 길거리 음식 투어",
     rating: 4.5,
     startDate: "2024-08-20",
@@ -192,7 +192,7 @@ export const packageData = [
     id: 19,
     category: "맛집 탐방",
     image: "https://via.placeholder.com/327x327.png?text=Naples",
-    name: "나폴리 피자 여행",
+    name: "나폴리 맛피자 여행",
     rating: 4.7,
     startDate: "2024-09-25",
     endDate: "2024-09-30",
@@ -213,8 +213,8 @@ export const packageData = [
   {
     id: 21,
     category: "겨울",
-    image: "https://via.placeholder.com/327x327.png?text=Hokkaido",
-    name: "홋카이도 스키 여행",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%92%E1%85%A9%E1%86%BA%E1%84%8F%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%83%E1%85%A9.jpeg?raw=true",
+    name: "인생에 남을 겨울을 홋카이도에서",
     rating: 4.9,
     startDate: "2024-12-20",
     endDate: "2024-12-27",
@@ -223,7 +223,7 @@ export const packageData = [
   {
     id: 22,
     category: "겨울",
-    image: "https://via.placeholder.com/327x327.png?text=Lapland",
+    image: "https://github.com/akns27/EssetStorage/blob/master/%E1%84%82%E1%85%A6%E1%86%A8%E1%84%89%E1%85%B3%E1%84%90%E1%85%B3/%E1%84%85%E1%85%A1%E1%84%91%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3.jpg?raw=true",
     name: "라플란드 오로라 투어",
     rating: 4.8,
     startDate: "2025-01-15",

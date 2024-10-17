@@ -15,6 +15,8 @@ globalStyle("*", {
 //   WebkitFontSmoothing: 'antialiased',
 // });
 
+
+
 // 이미지와 picture 요소 스타일
 globalStyle("img, picture, video, canvas, svg", {
   display: "block",
@@ -30,3 +32,4 @@ globalStyle("input, button, textarea, select", {
 globalStyle("p, h1, h2, h3, h4, h5, h6", {
   overflowWrap: "break-word",
 });
+

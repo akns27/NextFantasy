@@ -10,9 +10,9 @@ export const CategoryWholeContainer = style({
   height: "",
   WebkitOverflowScrolling: "touch",
   paddingLeft: "24px",
-  // "::-webkit-scrollbar": {
-  //   display: "none"
-  // },
+  "::-webkit-scrollbar": {
+    display: "none"
+  },
 });
 
 export const CategoryContainer = style({
