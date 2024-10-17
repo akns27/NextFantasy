@@ -1,5 +1,4 @@
-//CategoryBar.tsx
-'use client';//클라이언트라고 표시
+'use client';
 
 import CategoryItem from "../../components/CategoryBar/CategoryItem";
 import SoloIcon from "../../public/images/person.svg";
@@ -14,12 +13,16 @@ import {
 } from "@/app/components/CategoryBar/CategoryBar.css";
 
 import * as GlobalStyle from "../../style/global.css"
-import { useState } from "react";
-import { useCategorySelection } from './useCategorySelection';
+// import { useState } from "react";
+// import { useCategorySelection } from './useCategorySelection';
 
+interface CategoryBarProps {
+  selectedCategory: string | null;
+  setSelectedCategory: (category: string | null) => void;
+}
 
-const CategoryBar = ():JSX.Element => {
-  const {selectedCategory, setSelectedCategory} = useCategorySelection();
+const CategoryBar = ({ selectedCategory, setSelectedCategory }: CategoryBarProps): JSX.Element => {
+  // const {selectedCategory, setSelectedCategory} = useCategorySelection();
 
   const categories = [
     { icon: DomesticIcon, alt: "국내 여행", text: "국내" },
@@ -27,13 +30,8 @@ const CategoryBar = ():JSX.Element => {
     { icon: SoloIcon, alt: "혼자 여행", text: "혼여행" },
     { icon: GroupIcon, alt: "함께 여행", text: "함께 여행" },
     { icon: FoodIcon, alt: "맛집 탐방", text: "맛집 탐방" },
-
     { icon: WinterIcon, alt: "겨울 여행", text: "겨울" },
   ];
-
-
-
-  
 
   return (
     <div className={CategoryWholeContainer}>
@@ -44,8 +42,8 @@ const CategoryBar = ():JSX.Element => {
             icon={category.icon}
             alt={category.alt}
             text={category.text}
-            isSelected={selectedCategory === index}
-            onClick={() => setSelectedCategory(index)}
+            isSelected={selectedCategory === category.text}
+            onClick={() => setSelectedCategory(category.text)}
           />
         ))}
       </div>
